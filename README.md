@@ -1,9 +1,44 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# EasyVote
 
-First, run the development server:
+<div style='text-align: center;'>
+    <img src='https://upload.wikimedia.org/wikipedia/commons/d/dd/Strawpoll-logo-large.png' alt='EasyVote' width='400px' />
+</div>
 
+This is a simple voting app that allows users to create polls and vote on them. It is built with Next.js, TypeScript, and Tailwind CSS with Shadcn UI.
+
+## Features
+* Users can create polls with multiple options, edit once started and share the poll link with others to vote. All with **NO** authentication. 
+* The poll creator can see the results of the poll in real-time.
+* Polls can be single or multiple choice with images.
+* Polls can be setup with a one-time vote by public IP.
+
+## Tech Stack
+* Next.js
+* TypeScript
+* Tailwind CSS
+* Shadcn UI
+* Supabase
+
+## Running the app
+1. Clone the repository
+2. Install dependencies with the following command:
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+# or
+bun install
+```
+3. Create a `.env.local` file in the root of the project and add the following environment variables: 
+```bash
+NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+```
+4. Run the app with the following command:
 ```bash
 npm run dev
 # or
@@ -16,18 +51,8 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Demo
+[Click here to see the demo](https://easyvote.vercel.app/)
 
 ## Deploy on Vercel
 
